@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :notas
+  has_many :tweets
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   enum role:[:user, :moderador, :admin]
